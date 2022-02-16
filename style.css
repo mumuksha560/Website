@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+   margin: 0px; 
+}
+header{
+    padding: 50px;
+    text-align: center;
+    background: rgb(255,182,193);
+
+    
+}
+header h1{
+    font-size: 40px;
+}
+nav{
+    display: flex;
+    background-color: #333;
+}
+nav a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  float: left;
+
+}
+section{
+  text-align: center;
+  height: 100%;
+  padding: 75px 0px;
+  min-height: 40vh;
+}
+
+section:nth-child(even){
+  background-color: #ececec;
+}
+
+img{
+  padding: 0px 20px;
+}
+h2{
+  padding-bottom: 40px;
+}
+.flex-align-left{
+  margin-left: auto;
+}
+
+.menu-btn:hover{
+  background-color: white;
+  color: black;
+}
+section h2 span{
+  background: linear-gradient(to right, #ffcccc, #c6a2ac);
+  padding: 10px 55px;
+  border-radius: 20px;
+  color: white;
+}
+
+
+body { font-family: sans-serif; }
+
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.carousel-cell img{
+  max-width: 100%;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+  position: relative;
+  width: 100%;
+} 
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  nav{
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+  .flex-align-left{
+    margin-left: 0;
+  }
+  
+}
+
+
